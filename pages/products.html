@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coursework 3</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <div class="quality-phones">
+                <a href="../index.html"><img src="../images/QualityPhones.png" alt="home button"></a>
+            </div>
+            <nav>
+                <ul>
+
+                    <a href="../index.html" class="nav-btn" style="margin-left: 20%;">Home</a>
+                    <!-- inline css is used as only Product button needs some specific properties -->
+                    <a href="products.html" class="nav-btn" style="background-color: rgb(87, 87, 121); color: antiquewhite;">Product</a>
+                    <a href="blog.html" class="nav-btn">Blog</a>
+                    <a href="research.html" class="nav-btn">Research</a>
+                    <a href="contact_us.html" class="nav-btn">Contact Us</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- creating a wrapper class -->
+    <div class="wrapper">
+        <main>
+            <!-- creating a div for image slider -->
+            <div class="image-slider">
+                <img id="imgs">
+            </div>
+            <!-- creating a wrapper for products -->
+            <div class="products-main-wrapper">
+                <div class="brands-we-offer">
+                    <h2><u style="color: rgb(102 110 137);">BRANDS</u> WE <i style="color: rgb(54, 43, 255);">OFFER</i>
+                    </h2>
+                    <div class="brands-wrapper">
+                        <a href="#apple">
+                            <div class="brand card" style="margin-left: 44px;"><img src="../images/apple.png" alt="apple" class="brand-img card"></div>
+                        </a>
+                        <a href="#samsung">
+                            <div class="brand card"><img src="../images/samsung.png" alt="samsung" class="brand-img card" style="width: 90%; height:auto; margin-top:15px;"></div>
+                        </a>
+                        <a href="#xiaomi">
+                            <div class="brand card"><img src="../images/xiaomi.png" alt="xiaomi" class="brand-img card">
+                            </div>
+                        </a>
+                        <a href="#huawei">
+                            <div class="brand card"><img src="../images/huawei.png" alt="huawei" class="brand-img card">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="phone-models" id="apple" style="margin: 50px;">
+                    <h2><u>APPLE</u></h2>
+                    <div class="phones-wrapper">
+                        <a href="#">
+                            <div class="phones card" style="margin-left: 44px;"><img src="../images/iphone 13 pro.png" alt="iphone 13 pro" class="phones-img card">
+                                <h3 class="phone-name">iPhone 13 Pro</h3>
+                                <h3 class="price">$ 1200</h3>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="phones card"><img src="../images/iphone 13.png" alt="iphone 13" class="phones-img card">
+                                <h3 class="phone-name">iPhone 13</h3>
+                                <h3 class="price">$ 1100</h3>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="phones card"><img src="../images/iphone 12 pro.jpg" alt="iphone 12 pro.jpg" class="phones-img card">
+                                <h3 class="phone-name">iPhone 12 Pro</h3>
+                                <h3 class="price">$ 1000</h3>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="phones card"><img src="../images/iphone se.png" alt="iphone se.png" class="phones-img card">
+                                <h3 class="phone-name">iPhone SE</h3>
+                                <h3 class="price">$ 450</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="phone-models" id="samsung" style="margin-left:50px">
+                    <h2><u>SAMSUNG</u></h2>
+                    <div class="phones-wrapper">
+                        <a href="#">
+                            <div class="phones card" style="margin-left: 44px;"><img src="../images/samsung galaxy s10.png" alt="samsung galaxy s10" class="phones-img card">
+                                <h3 class="phone-name">Samsung Galaxy S10 </h3>
+                                <h3 class="price">$ 1200</h3>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="phones card"><img src="../images/samsung galaxy a50.png" alt="samsung galaxy a50" class="phones-img card">
+                                <h3 class="phone-name">Samsung Galaxy A50</h3>
+                                <h3 class="price">$ 500</h3>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="phones card"><img src="../images/samsung galaxy s9.png" alt="samsung galaxy s9" class="phones-img card">
+                                <h3 class="phone-name">Samsung Galaxy S9</h3>
+                                <h3 class="price">$ 900</h3>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="phones card"><img src="../images/samsung note 8.png" alt="samsung note 8" class="phones-img card">
+                                <h3 class="phone-name">Samsung Note 8</h3>
+                                <h3 class="price">$ 450</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="phone-models" id="xiaomi" style="margin-left:50px">
+                    <h2><u>XIAOMI</u></h2>
+                    <div class="phones-wrapper">
+                        <a href="#">
+                            <div class="phones card" style="margin-left: 44px;"><img src="../images/Redmi Note 9.png" alt="Redmi Note 9" class="phones-img card">
+                                <h3 class="phone-name">Redmi Note 9</h3>
+                                <h3 class="price">$ 500</h3>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="phones card"><img src="../images/Redmi Note 7.png" alt="Redmi Note 7" class="phones-img card">
+                                <h3 class="phone-name">Redmi Note 7</h3>
+                                <h3 class="price">$ 350</h3>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="phones card"><img src="../images/Redmi 6A.png" alt="Redmi 6A" class="phones-img card">
+                                <h3 class="phone-name">Redmi 6A</h3>
+                                <h3 class="price">$ 300</h3>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="phones card"><img src="../images/Redmi Y3.png" alt="Redmi Y3" class="phones-img card">
+                                <h3 class="phone-name">Redmi Y3</h3>
+                                <h3 class="price">$ 400</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="phone-models" id="huawei" style="margin-left:50px">
+                    <h2><u>HUAWEI</u></h2>
+                    <div class="phones-wrapper">
+                        <a href="#">
+                            <div class="phones card" style="margin-left: 44px;"><img src="../images/Huawei Mate 10.png" alt="Huawei Mate 10" class="phones-img card">
+                                <h3 class="phone-name">Huawei Mate 10</h3>
+                                <h3 class="price">$ 600</h3>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="phones card"><img src="../images/Huawei Mate 9.png" alt="Huawei Mate 9" class="phones-img card">
+                                <h3 class="phone-name">Huawei Mate 9</h3>
+                                <h3 class="price">$ 550</h3>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="phones card"><img src="../images/Huawei P8.png" alt="Huawei P8" class="phones-img card">
+                                <h3 class="phone-name">Huawei P8</h3>
+                                <h3 class="price">$ 400</h3>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="phones card"><img src="../images/Huawei Y6.png" alt="Huawei Y6" class="phones-img card">
+                                <h3 class="phone-name">Huawei Y6</h3>
+                                <h3 class="price">$ 330</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <h1 class="more-products">MORE <span class="change" style="font-size: 35px;">PRODUCTS</span> <br> <span class="change" style="font-size: 35px;">ARRIVING</span> SOON.</h1>
+
+        </main>
+
+        <footer>
+            <div class="links">
+                Links: <br><br>
+                <a href="index.html" target="_blank" class="underlined-link">Home</a>
+                <a href="products.html" target="_blank" class="underlined-link">Product</a>
+                <a href="blog.html" target="_blank" class="underlined-link">Blog</a>
+                <a href="research.html" target="_blank" class="underlined-link">Research</a>
+                <a href="contact_us.html" target="_blank" class="underlined-link"> Contact Us</a>
+
+                <div class="contact">
+                    <img src="../images/phone.png" alt="phone icon" class="icon-size only-right-margin" style="margin-top: 5px; margin-right:5px;">
+                    <p style="margin-top: 5px; display: inline-block;">9845786555
+                        </span>
+                </div>
+            </div>
+
+            <div class="offers">
+                Offers: <br><br>
+                <a href="#" target="_blank" class="underlined-link">New Year Offer</a>
+                <a href="#" target="_blank" class="underlined-link">Buy one get one free*</a>
+                <a href="#" target="_blank" class="underlined-link">Dashain maa chamat-car</a>
+                <a href="#" target="_blank" class="underlined-link">Tihar aayo!</a>
+                <a href="#" target="_blank" class="underlined-link"> Limited Edition Phones</a>
+                <div class="contact">
+                    <img src="../images/email.png" alt="emain icon" class="icon-size only-right-margin" style="margin-top: 5px; margin-right:5px;"> <span style="margin-top: 5px; display: inline-block;">johndoe@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="policies">
+                Policies: <br><br>
+                <a href="#" target="_blank" class="underlined-link">Terms and Conditions</a>
+                <a href="#" target="_blank" class="underlined-link">Return Policy</a>
+                <a href="#" target="_blank" class="underlined-link">Shipping Policy</a>
+            </div>
+
+            <div class="office-location">Our office location: <br><br>
+                <img src="../images/map.jpg" alt="map" class="map">
+            </div>
+
+            <div class="social-media">
+                <h4>You can now reach us out</h4>
+                <h4 style="text-align: center;">in social media</h4><br>
+                Our Social Media Handles: <br>
+
+                <a href="#" target="_blank"><img src="../images/facebook.png" alt="facebook icon" class="icon-size" style="margin: 5px 15px 5px 30px;"></a>
+
+                <a href="#" target="_blank"><img src="../images/instagram.png" alt="instagram icon" class="icon-size" style="margin: 5px 15px;"></a>
+
+                <a href="#" target="_blank"><img src="../images/twitter.png" alt="twitter icon" class="icon-size" style="margin: 5px 15px;"></a>
+            </div>
+        </footer>
+
+    </div>
+    <script src="../js/main.js"></script>
+    <script>
+        var images = ["../images/0.jpg", "../images/1.png", "../images/2.jpg", "../images/3.jpg"];
+        var imgs = document.getElementById("imgs");
+        imgs.src = images[0];
+        var i = 0;
+        setInterval(slider, 2000)
+
+        function slider() {
+            imgs.src = images[i]
+            if (i < images.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ankit Khanal">
+    <meta name="description" content="e-commerce website for mobile phones">
+    <meta name="keywords" content="iphone, buy phones, samsung, huawei, xiaomi">
+    <title>Coursework 3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="quality-phones">
+                <a href="index.html"><img src="images/QualityPhones.png" alt="home button"></a>
+            </div>
+            <nav>
+                <ul>
+                    <!-- inline css is used as only Home button needs margin-left: 20% where as other nav-btn classes need margin-left: 30px. Also background-color is set to be darker -->
+                    <a href="index.html" class="nav-btn" style="margin-left: 20%; background-color: rgb(87, 87, 121); color: antiquewhite;">Home</a>
+                    <a href="pages/products.html" class="nav-btn">Product</a>
+                    <a href="pages/blog.html" class="nav-btn">Blog</a>
+                    <a href="pages/research.html" class="nav-btn">Research</a>
+                    <a href="pages/contact_us.html" class="nav-btn">Contact Us</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- creating a wrapper class -->
+    <div class="wrapper">
+
+        <main>
+            <!-- creating a div for image slider -->
+            <div class="image-slider">
+                <img id="imgs">
+            </div>
+
+            <!-- creating a wrapper for welcome section -->
+            <div class="welcome-wrapper">
+                <h3 class="welcome text-block">WELCOME</h3>
+                <h4 class="welcome-text text-block">To the place where <i>you'll</i> buy your next <u>phone</u></h4>
+
+                <a href="pages/products.html" target="_blank" class="link-btn view-products-btn">View Our Products</a>
+            </div>
+
+            <!-- creating a wrapper for customer review section -->
+            <div class="review-wrapper">
+
+                <h3 class="customer-says">SEE what our <span class="change" style="font-size: 30px;"><u>customers</u></span> have to say</h3>
+
+                <div class="review card">
+                    <h4 class="reviewer">John says:</h4><br>
+                    <h5>"This is by far the most reliable website I've ever visited."</h5>
+                </div>
+
+                <div class="review card">
+                    <h4 class="reviewer">Chandler says:</h4><br>
+                    <h5>"Could I be any more satisfied?"</h5>
+                </div>
+
+                <div class="review card">
+                    <h4 class="reviewer">Marshal says:</h4><br>
+                    <h5>"I got my phone from here. It's nice."</h5>
+                </div>
+
+            </div>
+
+            <section class="happy-shopping">Have fun <span class="change" style="font-size: 30px;">shopping!</span></section>
+        </main>
+
+        <footer>
+            <div class="links">
+                Links: <br><br>
+                <a href="index.html" target="_blank" class="underlined-link">Home</a>
+                <a href="pages/products.html" target="_blank" class="underlined-link">Product</a>
+                <a href="pages/blog.html" target="_blank" class="underlined-link">Blog</a>
+                <a href="pages/research.html" target="_blank" class="underlined-link">Research</a>
+                <a href="pages/contact_us.html" target="_blank" class="underlined-link"> Contact Us</a>
+
+                <div class="contact">
+                    <img src="images/phone.png" alt="phone icon" class="icon-size only-right-margin" style="margin-top: 5px; margin-right:5px;">
+                    <p style="margin-top: 5px; display: inline-block;">9845786555
+                        </span>
+                </div>
+            </div>
+
+            <div class="offers">
+                Offers: <br><br>
+                <a href="#" target="_blank" class="underlined-link">New Year Offer</a>
+                <a href="#" target="_blank" class="underlined-link">Buy one get one free*</a>
+                <a href="#" target="_blank" class="underlined-link">Dashain maa chamat-car</a>
+                <a href="#" target="_blank" class="underlined-link">Tihar aayo!</a>
+                <a href="#" target="_blank" class="underlined-link"> Limited Edition Phones</a>
+                <div class="contact">
+                    <img src="images/email.png" alt="emain icon" class="icon-size only-right-margin" style="margin-top: 5px; margin-right:5px;"> <span style="margin-top: 5px; display: inline-block;">johndoe@gmail.com</span>
+                </div>
+            </div>
+
+            <div class="policies">
+                Policies: <br><br>
+                <a href="#" target="_blank" class="underlined-link">Terms and Conditions</a>
+                <a href="#" target="_blank" class="underlined-link">Return Policy</a>
+                <a href="#" target="_blank" class="underlined-link">Shipping Policy</a>
+            </div>
+
+            <div class="office-location">Our office location: <br><br>
+                <img src="images/map.jpg" alt="map" class="map">
+            </div>
+
+            <div class="social-media">
+                <h4>You can now reach us out</h4>
+                <h4 style="text-align: center;">in social media</h4><br>
+                Our Social Media Handles: <br>
+
+                <a href="#" target="_blank"><img src="images/facebook.png" alt="facebook icon" class="icon-size" style="margin: 5px 15px 5px 30px;"></a>
+
+                <a href="#" target="_blank"><img src="images/instagram.png" alt="instagram icon" class="icon-size" style="margin: 5px 15px;"></a>
+
+                <a href="#" target="_blank"><img src="images/twitter.png" alt="twitter icon" class="icon-size" style="margin: 5px 15px;"></a>
+            </div>
+        </footer>
+
+    </div>
+    <script>
+        var images = ["images/0.jpg", "images/1.png", "images/2.jpg", "images/3.jpg"];
+        var imgs = document.getElementById("imgs");
+        imgs.src = images[0];
+        var i = 0;
+        // setInterval method to call slider() every 2 seconds
+        setInterval(slider, 2000)
+
+        function slider() {
+            imgs.src = images[i]
+            if (i < images.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
